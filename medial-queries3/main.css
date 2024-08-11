@@ -1,3 +1,87 @@
 body {
-  background: peachpuff;
+  background: whitesmoke;
+}
+
+* {
+  text-align: center;
+}
+
+.body-container {
+  
+  min-height: 100vh;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: stretch;
+}
+
+header {
+  background-color: lightskyblue;
+  border: 1px solid black;
+  color: white;
+  width: 100%;
+  margin-bottom: 1.5em;
+  height: 10em;
+  font-size: larger;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: space-evenly;
+  /* height: 20em; */
+  margin-bottom: 20px;
+}
+
+aside > div {
+  background-color: grey;
+  border: 1px solid black;
+  color: white;
+  width: 29%;
+  margin: 2vw;
+  font-size: larger;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column; /*snaps it into place*/
+  min-height: 85vh;
+  width: 100%; /*width scretching across for b-g */
+}
+
+main {
+  background-color: lightgreen;
+  color: white;
+  border: 1px solid black;
+  flex-grow: 4;
+  font-size: larger; 
+}
+
+@media (min-width: 650px) {
+  .wrap {
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+  }
+
+  aside {
+    width: 80%;
+    height: 100%;
+    flex: 4;
+    align-items: baseline;
+  }
+
+  aside > div {
+    height: 5em;
+    width: 25%;
+    height: 30%;
+    flex-grow: 2;
+  }
+
+  main {
+    /* flex-direction: row; */
+    flex: 2;
+    flex-grow: 1;
+    height: 630px;
+  }
 }

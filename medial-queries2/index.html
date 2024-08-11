@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Media Queries 2</title>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="a">a</div>
-      <div class="b">b</div>
-      <div class="c">c</div>
-      <div class="d">d</div>
-      <div class="e">e</div>
-      <div class="f">f</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+    <div>
+      <div class="a child">a</div>
+      
+      <div class="main-container">
+        <div class="container-one">
+          <div class="b child expanded">b</div>
+          <div class="c child triplet">c</div>
+          <div class="d child triplet">d</div>
+          <div class="e child triplet">e</div>
+        </div>
+        <div class="container-two">
+          <div class="f child single">f</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
